@@ -1,50 +1,14 @@
 <div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  <p>Hello, world!</p>
+  <h1>Welcome to Racer World</h1>
+  <p>Please enter you name:</p>
 
-  <table class="racer_table">
-    <tr id="player1_strip">
-      <td class='active'></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr id="player2_strip">
-      <td class="active"></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </table>
+  <form name='player' action='/play' method='post'>
+    Player 1:
+    <input type='text' name='p1'>
+    Player 2:
+    <input type='text' name='p2'>
+    <input type='submit' name='Start'>
+  </form>
+
 </div>
 
