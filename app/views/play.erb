@@ -1,66 +1,26 @@
 <div class="container">
   <h1>Welcome to Racer World</h1>
 
+  Game #<span id="gameid"><%= @game.id %></span><br><br>
+  <div id="stopwatch"><h2>0.00</h2></div>
+
   <table class="racer_table">
     <tr id="player1_strip">
-      <td class='active'></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td id="p1_name"><%=@p1.name%></td>
+      <td class="active"></td>
+      <% 20.times do %>
+        <td></td>
+      <% end %>
     </tr>
     <tr id="player2_strip">
+      <td id="p2_name"><%=@p2.name%></td>
       <td class="active"></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <% 20.times do %>
+        <td></td>
+      <% end %>
     </tr>
   </table>
-  <div id="stopwatch">0</div>
+
+  <div id="announce"></div>
 </div>
 
